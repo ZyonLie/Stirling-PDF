@@ -87,7 +87,7 @@ RUN echo "@main https://dl-cdn.alpinelinux.org/alpine/edge/main" | tee -a /etc/a
     chown -R stirlingpdfuser:stirlingpdfgroup $HOME /scripts /usr/share/fonts/opentype/noto /configs /customFiles /pipeline && \
     chown stirlingpdfuser:stirlingpdfgroup /app.jar
 
-EXPOSE 8080/tcp
+EXPOSE 8081/tcp
 
 # Set user and run command
 ENTRYPOINT ["tini", "--", "/scripts/init.sh"]
